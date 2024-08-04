@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.oganesson.generator'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.moandjiezana.toml:toml4j:0.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
